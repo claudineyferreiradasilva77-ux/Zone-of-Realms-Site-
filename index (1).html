@@ -1,27 +1,1092 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#070b18"><title>ZORVANYX • Loja VIP Oficial</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#030405">
+<title>ZORVANYX • Loja VIP</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
 <style>
-:root{--bg:#070b18;--panel:#101a30;--cyan:#52dcff;--gold:#ffd166;--muted:#9aabc8;--line:#263958}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#1a3262 0,#0b1428 38%,var(--bg) 75%);color:#f4f7ff;font-family:Inter,Segoe UI,Arial,sans-serif;min-height:100vh;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(#8bdcff12 1px,transparent 1px),linear-gradient(90deg,#8bdcff12 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,#000,transparent 75%)}.wrap{width:min(1160px,calc(100% - 36px));margin:auto;position:relative;z-index:1}.top{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid #ffffff12}.brand{display:flex;align-items:center;gap:12px;font-weight:950;letter-spacing:2px}.brand-mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#0e7490,#2563eb 60%,#7c3aed);box-shadow:0 0 28px #38bdf855;font-size:22px}.server{font-size:12px;color:#b7c8e6;border:1px solid #ffffff20;padding:8px 12px;border-radius:99px;background:#ffffff08}.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:28px;padding:62px 0 54px;min-height:430px}.eyebrow{color:var(--cyan);font-size:12px;font-weight:900;letter-spacing:3px;text-transform:uppercase}.hero h1{font-size:clamp(38px,6vw,70px);line-height:.99;letter-spacing:-2px;margin:15px 0 18px;font-weight:1000}.hero h1 span{background:linear-gradient(100deg,#fff 10%,#7ce7ff 48%,#b7a5ff 85%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:560px;color:#aebdd5;line-height:1.7;font-size:16px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.pill{border:1px solid #ffffff20;border-radius:99px;padding:11px 15px;color:#c8d7ef;font-size:12px;background:#ffffff08}.globe-stage{height:330px;display:grid;place-items:center;position:relative;perspective:900px}.orbit{position:absolute;width:310px;height:105px;border:1px solid #54dfff55;border-radius:50%;transform:rotate(-24deg);box-shadow:0 0 28px #35cfff18}.orbit.two{width:355px;height:140px;transform:rotate(48deg);border-color:#a78bfa55}.globe{width:220px;height:220px;border-radius:50%;position:relative;overflow:hidden;background:radial-gradient(circle at 32% 28%,#a5f3fc 0,#38bdf8 9%,#1761a5 36%,#102b63 70%,#07142f 100%);box-shadow:inset -24px -18px 45px #020617cc,inset 12px 8px 28px #b7f3ff88,0 0 48px #22d3ee55,0 0 100px #2563eb33;animation:float 5s ease-in-out infinite}.globe:before{content:"";position:absolute;inset:-4%;border-radius:50%;background:repeating-linear-gradient(90deg,transparent 0 30px,#a5f3fc30 31px 32px,transparent 33px 58px);animation:spin 16s linear infinite;mask-image:radial-gradient(ellipse,#000 60%,transparent 73%)}.land{position:absolute;background:linear-gradient(140deg,#a7f3d0,#22c55e 55%,#0f766e);filter:drop-shadow(0 2px 3px #041b32);opacity:.95}.land.a{width:78px;height:105px;left:47px;top:38px;border-radius:58% 38% 48% 40%;transform:rotate(22deg);clip-path:polygon(15% 0,80% 8%,100% 35%,78% 52%,85% 75%,55% 100%,36% 78%,20% 60%,0 30%)}.land.b{width:48px;height:80px;left:90px;top:130px;border-radius:45%;transform:rotate(-18deg);clip-path:polygon(22% 0,88% 12%,100% 45%,60% 100%,28% 78%,0 38%)}.land.c{width:62px;height:45px;right:25px;top:60px;border-radius:50%;transform:rotate(20deg);clip-path:polygon(0 25%,35% 0,100% 22%,80% 85%,30% 100%)}.glow{position:absolute;width:270px;height:38px;bottom:20px;border-radius:50%;background:#38bdf833;filter:blur(24px)}@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{50%{transform:translateY(-12px) rotate(2deg)}}.section-head{text-align:center;margin:12px 0 28px}.section-head small{color:var(--cyan);font-weight:900;letter-spacing:3px}.section-head h2{font-size:32px;margin:10px 0}.section-head p{color:var(--muted);margin:0}.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;padding-bottom:34px}.card{position:relative;overflow:hidden;background:linear-gradient(155deg,#14233d 0%,#0c1528 65%);border:1px solid #3b5b7a;border-radius:24px;padding:27px;box-shadow:0 18px 55px #0005;transition:.25s}.card:hover{transform:translateY(-6px);border-color:#67e8f9;box-shadow:0 24px 65px #0ea5e933}.card.premium{border-color:#8c713a;background:linear-gradient(155deg,#2a251c,#11182a 65%)}.card.premium:hover{border-color:var(--gold);box-shadow:0 24px 65px #f59e0b22}.ribbon{display:inline-flex;padding:7px 11px;border-radius:99px;background:#38bdf81a;color:var(--cyan);font-size:11px;font-weight:900;letter-spacing:1.3px}.premium .ribbon{background:#facc1520;color:var(--gold)}.card h3{font-size:25px;margin:18px 0 8px}.price{font-size:42px;font-weight:1000;letter-spacing:-1px}.price small{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:0}.card ul{list-style:none;margin:22px 0 25px;padding:0}.card li{padding:10px 0;border-bottom:1px solid #ffffff10;color:#d7e2f3;font-size:14px}.card li:before{content:'✦';color:var(--cyan);margin-right:10px}.premium li:before{color:var(--gold)}button{font:inherit}.buy{width:100%;padding:15px;border:0;border-radius:13px;font-weight:950;letter-spacing:.8px;text-transform:uppercase;cursor:pointer;color:#03101d;background:linear-gradient(100deg,#67e8f9,#38bdf8 55%,#818cf8);box-shadow:0 8px 25px #38bdf833;transition:.2s}.premium .buy{background:linear-gradient(100deg,#fef3c7,#fbbf24,#f59e0b)}.buy:hover{transform:translateY(-2px);filter:brightness(1.08)}.trial-note{margin:0 auto 64px;padding:19px 22px;border:1px solid #8b5cf655;border-radius:18px;background:linear-gradient(100deg,#261b46aa,#101a30aa);max-width:780px;text-align:center;color:#c8c4f5;line-height:1.6}.trial-note b{color:#e9d5ff}.foot{border-top:1px solid #ffffff14;padding:24px 0 34px;text-align:center;color:#7184a4;font-size:12px}.modal-bg{display:none;position:fixed;inset:0;z-index:10;background:#020617dc;backdrop-filter:blur(12px);padding:18px;align-items:center;justify-content:center;overflow:auto}.modal{width:min(490px,100%);max-height:95vh;overflow:auto;background:linear-gradient(155deg,#172844,#0b1222);border:1px solid #4b739a;border-radius:24px;padding:26px;box-shadow:0 30px 100px #000b}.modal h2{margin:0 0 8px;font-size:24px}.muted{color:var(--muted);font-size:13px;line-height:1.6}.label{display:block;text-align:left;font-size:12px;font-weight:800;color:#c7d6ec;margin:18px 0 8px}.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}.choice{border:1px solid #3a506e;border-radius:13px;padding:13px;background:#0b1629;color:#dbeafe;cursor:pointer;font-weight:800}.choice.active{border-color:#4de0ff;background:#0c3449;box-shadow:inset 0 0 0 1px #4de0ff55}.modal input{width:100%;padding:14px;border:1px solid #405575;border-radius:12px;background:#071326;color:#fff;font-size:16px;outline:none}.modal input:focus{border-color:#52dcff}.modal .buy{margin-top:16px}.close{display:block;margin:14px auto 0;background:transparent;border:0;color:#9aabc8;cursor:pointer;padding:8px}.pixbox{display:none;margin-top:16px;padding:15px;border:1px solid #34516e;border-radius:16px;background:#071326;text-align:center}.pixbox .code{font-size:11px;word-break:break-all;color:#c8d7ef;background:#020817;padding:10px;border-radius:9px;margin:10px 0}.copy{padding:11px 14px;border:1px solid #4a6888;border-radius:10px;background:#132641;color:#fff;cursor:pointer;font-weight:800}#qrcode{display:inline-block;background:white;padding:9px;border-radius:10px;margin:10px}.status{font-size:13px;color:#fcd34d;min-height:20px;margin-top:12px}.order{font-size:12px;color:#86efac;margin:6px 0}
-@media(max-width:760px){.hero{grid-template-columns:1fr;padding:42px 0 25px;text-align:center}.hero p{margin:auto}.hero-actions{justify-content:center}.globe-stage{height:270px}.globe{width:180px;height:180px}.orbit{width:260px}.orbit.two{width:290px}.plans{grid-template-columns:1fr}.top{padding:15px 0}.server{font-size:10px}.card{padding:23px}}
-</style></head><body>
-<div class="wrap"><nav class="top"><div class="brand"><div class="brand-mark">✦</div><span>ZORVANYX</span></div><div class="server">● SERVIDOR ONLINE • JAVA 1.21.1</div></nav>
-<section class="hero"><div><div class="eyebrow">A próxima evolução começa aqui</div><h1>DOMINE O<br><span>SEU MUNDO.</span></h1><p>Garanta vantagens exclusivas no ZORVANYX. Escolha seu plano, informe seu nick e receba seu código de pedido com PIX.</p><div class="hero-actions"><span class="pill">✧ Entrega após confirmação</span><span class="pill">◈ Java • Original e TLauncher</span></div></div><div class="globe-stage"><div class="orbit"></div><div class="orbit two"></div><div class="glow"></div><div class="globe"><i class="land a"></i><i class="land b"></i><i class="land c"></i></div></div></section>
-<div class="section-head"><small>ESCOLHA SUA VANTAGEM</small><h2>Planos VIP</h2><p>Todos os planos têm duração de 30 dias.</p></div>
-<section class="plans"><article class="card"><span class="ribbon">✦ ESSENCIAL</span><h3>VIP NORMAL</h3><div class="price">R$ 8,00 <small>/ 30 dias</small></div><ul><li>1 Baú de Pet Raro na ativação</li><li>/vipkit1 a cada 3 dias</li><li>Shulker Azul Claro recheada</li><li>Armadura de Ferro com molde especial</li><li>Espada, Picareta e Machado de Diamante</li><li>Maçãs douradas e Totem</li></ul><button class="buy" onclick="abrirCompra('normal')">Adquirir VIP Normal</button></article>
-<article class="card premium"><span class="ribbon">★ MAIS VENDIDO</span><h3>VIP PREMIUM</h3><div class="price">R$ 29,90 <small>/ 30 dias</small></div><ul><li>1 Baú de Pet Raro na ativação</li><li>/vipkit2 a cada 3 dias</li><li>Shulker Dourada recheada</li><li>Armadura Full Diamante com molde especial</li><li>Espada de Netherite + ferramentas</li><li>Maçãs douradas e Totem</li></ul><button class="buy" onclick="abrirCompra('premium')">Adquirir VIP Premium</button></article></section>
-<div class="trial-note">♛ <b>Teste VIP de 30 dias</b><br>Benefício especial reservado exclusivamente ao nick <b>pedrinhodograu67</b>. A emissão é feita pelo painel administrativo e só pode acontecer uma vez.</div>
-<footer class="foot">ZORVANYX • Loja Oficial de VIPs • Pagamentos PIX sujeitos à conferência manual.</footer></div>
-<div class="modal-bg" id="modal"><div class="modal"><h2 id="titulo">Comprar VIP</h2><p class="muted">Escolha o tipo da sua conta e informe seu nick exatamente como aparece no servidor.</p><span class="label">TIPO DE CONTA</span><div class="choices"><button class="choice active" id="original" onclick="tipoConta('java_original')">✦ Original</button><button class="choice" id="tlauncher" onclick="tipoConta('tlauncher')">◈ TLauncher</button></div><label class="label" for="nick">NICK DO MINECRAFT</label><input id="nick" maxlength="16" autocomplete="off" placeholder="Ex.: pedrinhodograu67"><button class="buy" id="criar" onclick="criarPedido()">Gerar pedido e PIX</button><div class="status" id="status"></div><div class="pixbox" id="pixbox"><div class="order" id="pedido"></div><div id="qrcode"></div><div class="code" id="pixtexto"></div><button class="copy" onclick="copiarPix()">Copiar PIX Copia e Cola</button><p class="muted">Guarde o código do pedido e envie o comprovante pelo canal oficial para conferência.</p></div><button class="close" onclick="fechar()">Fechar janela</button></div></div>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+  --bg:#030405;
+  --panel:#0b0e11;
+  --line:#252d32;
+  --cyan:#70f0e1;
+  --purple:#b49aff;
+  --gold:#f3cf83;
+  --muted:#929da4;
+  --white:#f5f7f8;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  min-height:100vh;
+  background:
+    radial-gradient(ellipse at 50% -15%,#15302d 0,transparent 42%),
+    #030405;
+  color:var(--white);
+  font-family:Manrope,Arial,sans-serif;
+  overflow-x:hidden;
+}
+
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.14;
+  background-image:
+    linear-gradient(#ffffff09 1px,transparent 1px),
+    linear-gradient(90deg,#ffffff09 1px,transparent 1px);
+  background-size:55px 55px;
+  mask-image:linear-gradient(#000,transparent 80%);
+}
+
+.ambient{
+  position:fixed;
+  width:420px;
+  height:420px;
+  border-radius:50%;
+  filter:blur(120px);
+  opacity:.12;
+  pointer-events:none;
+  background:#25c9b5;
+  left:-250px;
+  top:10%;
+  animation:ambient 12s ease-in-out infinite alternate;
+}
+
+.ambient.right{
+  background:#8a63e8;
+  left:auto;
+  right:-280px;
+  top:50%;
+}
+
+@keyframes ambient{
+  to{transform:translate(100px,80px) scale(1.2)}
+}
+
+.wrap{
+  width:min(1160px,calc(100% - 36px));
+  margin:auto;
+  position:relative;
+  z-index:1;
+}
+
+header{
+  height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #ffffff12;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:900;
+  letter-spacing:4px;
+  font-size:17px;
+}
+
+.brand-icon{
+  width:39px;
+  height:39px;
+  display:grid;
+  place-items:center;
+  border:1px solid #70f0e155;
+  border-radius:12px;
+  color:var(--cyan);
+  background:#0c1716;
+  box-shadow:0 0 28px #70f0e11b;
+  font-size:20px;
+}
+
+.header-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.version,.sound{
+  font:10px 'DM Mono',monospace;
+  letter-spacing:1px;
+  border:1px solid #ffffff20;
+  border-radius:99px;
+  padding:10px 13px;
+  color:#c4d0ce;
+  background:#0a0d0f;
+}
+
+.sound{cursor:pointer}
+.sound:hover{border-color:var(--cyan);color:var(--cyan)}
+
+.hero{
+  min-height:510px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:25px;
+  padding:60px 0 45px;
+}
+
+.kicker{
+  color:var(--cyan);
+  font:11px 'DM Mono',monospace;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.kicker:before{
+  content:"";
+  display:inline-block;
+  width:25px;
+  height:1px;
+  background:var(--cyan);
+  vertical-align:middle;
+  margin-right:10px;
+}
+
+h1{
+  font-size:clamp(48px,7vw,82px);
+  line-height:.98;
+  letter-spacing:-5px;
+  margin:22px 0;
+  font-weight:900;
+}
+
+h1 span{
+  background:linear-gradient(100deg,#fff,#8af4e6,#b49aff);
+  color:transparent;
+  background-clip:text;
+  -webkit-background-clip:text;
+}
+
+.hero-text{
+  max-width:520px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.9;
+}
+
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:25px;
+}
+
+.tag{
+  border:1px solid #ffffff1c;
+  border-radius:99px;
+  padding:9px 12px;
+  color:#c2cecc;
+  font:10px 'DM Mono',monospace;
+  letter-spacing:.7px;
+  background:#ffffff05;
+}
+
+/* GLOBO ANIMADO */
+.visual{
+  height:390px;
+  display:grid;
+  place-items:center;
+  position:relative;
+  perspective:900px;
+}
+
+.stars{
+  position:absolute;
+  inset:0;
+  opacity:.3;
+  background-image:radial-gradient(#fff 1px,transparent 1.5px);
+  background-size:49px 49px;
+  mask-image:radial-gradient(ellipse,#000,transparent 72%);
+  animation:twinkle 5s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle{to{opacity:.55}}
+
+.globe-wrap{
+  width:300px;
+  height:300px;
+  display:grid;
+  place-items:center;
+  position:relative;
+  animation:float 6s ease-in-out infinite;
+  filter:drop-shadow(0 0 45px #36d3bf30);
+}
+
+@keyframes float{50%{transform:translateY(-13px)}}
+
+.globe{
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  overflow:hidden;
+  position:relative;
+  background:
+    radial-gradient(circle at 30% 25%,#d7fff5 0,#73d9c9 5%,#247e78 27%,#0b363a 60%,#030b11 100%);
+  box-shadow:
+    inset -28px -20px 42px #000e,
+    inset 9px 7px 22px #d8fff366,
+    0 0 35px #51dcca45,
+    0 0 90px #18a99b25;
+}
+
+.globe:before{
+  content:"";
+  position:absolute;
+  inset:-5%;
+  border-radius:50%;
+  background:repeating-linear-gradient(
+    90deg,
+    transparent 0 21px,
+    #b7fff52b 22px 23px,
+    transparent 24px 44px
+  );
+  animation:gridspin 18s linear infinite;
+}
+
+.globe:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  background:linear-gradient(110deg,transparent 20%,#d7fff51c 48%,transparent 70%);
+  transform:translateX(-100%);
+  animation:shine 7s ease-in-out infinite;
+}
+
+@keyframes gridspin{to{transform:rotateY(360deg)}}
+@keyframes shine{45%,100%{transform:translateX(100%)}}
+
+.land{
+  position:absolute;
+  background:linear-gradient(145deg,#b6edbd,#318e79 65%,#14534f);
+  filter:drop-shadow(0 2px 3px #001b1b);
+}
+
+.land.one{
+  width:72px;height:92px;left:44px;top:34px;
+  clip-path:polygon(20% 0,78% 7%,100% 29%,80% 45%,88% 62%,58% 100%,43% 75%,28% 62%,0 32%);
+}
+
+.land.two{
+  width:53px;height:83px;left:116px;top:115px;
+  clip-path:polygon(12% 0,85% 10%,100% 42%,70% 60%,55% 100%,32% 78%,0 35%);
+}
+
+.land.three{
+  width:64px;height:54px;right:20px;top:53px;
+  clip-path:polygon(0 24%,40% 0,100% 18%,80% 70%,43% 100%,20% 65%);
+}
+
+.ring{
+  position:absolute;
+  width:335px;
+  height:105px;
+  border:1px solid #70f0e16b;
+  border-radius:50%;
+  transform:rotate(-24deg);
+  animation:ringpulse 5s ease-in-out infinite;
+}
+
+.ring.two{
+  width:360px;
+  height:135px;
+  transform:rotate(54deg);
+  border-color:#b49aff55;
+  animation-delay:-2s;
+}
+
+.ring.three{
+  width:270px;
+  height:270px;
+  border-color:#ffffff18;
+  transform:rotateX(72deg);
+  animation:orbit 22s linear infinite;
+}
+
+@keyframes ringpulse{
+  50%{opacity:.35;transform:rotate(-24deg) scale(1.04)}
+}
+@keyframes orbit{
+  to{transform:rotateX(72deg) rotateZ(360deg)}
+}
+
+.orb{
+  position:absolute;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--cyan);
+  box-shadow:0 0 18px var(--cyan);
+  top:38px;
+  right:36px;
+}
+
+/* PLANOS */
+.section{padding:20px 0 75px}
+
+.section-title{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.overline{
+  color:var(--cyan);
+  font:10px 'DM Mono',monospace;
+  letter-spacing:3px;
+}
+
+.section-title h2{
+  font-size:34px;
+  letter-spacing:-1px;
+  margin:12px 0 8px;
+}
+
+.section-title p{
+  color:var(--muted);
+  font-size:13px;
+}
+
+.plans{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.card{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(145deg,#101518,#080a0c 75%);
+  border:1px solid #ffffff1c;
+  border-radius:22px;
+  padding:30px;
+  transition:.3s;
+}
+
+.card:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:radial-gradient(circle at 100% 0,#70f0e111,transparent 48%);
+}
+
+.card:hover{
+  transform:translateY(-7px);
+  border-color:#70f0e177;
+  box-shadow:0 24px 65px #000b,0 0 35px #70f0e110;
+}
+
+.card.premium{border-color:#b49aff50}
+
+.card.premium:before{
+  background:radial-gradient(circle at 100% 0,#b49aff17,transparent 48%);
+}
+
+.card.premium:hover{border-color:#b49aff}
+
+.ribbon{
+  display:inline-block;
+  padding:8px 11px;
+  border:1px solid #70f0e13b;
+  border-radius:99px;
+  color:var(--cyan);
+  font:10px 'DM Mono',monospace;
+  letter-spacing:1px;
+}
+
+.premium .ribbon{
+  color:#cbbaff;
+  border-color:#b49aff55;
+}
+
+.card h3{
+  font-size:23px;
+  margin:22px 0 8px;
+  letter-spacing:1px;
+}
+
+.price{
+  font-size:42px;
+  font-weight:900;
+  letter-spacing:-2px;
+}
+
+.price small{
+  font:11px 'DM Mono',monospace;
+  color:#89949b;
+  letter-spacing:0;
+}
+
+.card ul{
+  list-style:none;
+  padding:0;
+  margin:23px 0 25px;
+}
+
+.card li{
+  padding:11px 0;
+  border-bottom:1px solid #ffffff0d;
+  color:#bac4c8;
+  font-size:13px;
+  line-height:1.5;
+}
+
+.card li:before{
+  content:"✦";
+  color:var(--cyan);
+  margin-right:10px;
+}
+
+.premium li:before{color:#c4b5fd}
+
+.buy{
+  width:100%;
+  border:1px solid #70f0e177;
+  border-radius:12px;
+  padding:15px;
+  background:linear-gradient(100deg,#a7fff0,#55cdbd);
+  color:#04110f;
+  font:900 11px 'DM Mono',monospace;
+  letter-spacing:1px;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.buy:hover{
+  filter:brightness(1.1);
+  transform:translateY(-2px);
+  box-shadow:0 9px 30px #70f0e126;
+}
+
+.premium .buy{
+  background:linear-gradient(100deg,#e6ddff,#a78bfa);
+  border-color:#c4b5fd;
+}
+
+.trial{
+  margin:22px auto 0;
+  max-width:780px;
+  padding:20px;
+  border:1px solid #b49aff3c;
+  border-radius:16px;
+  background:#b49aff0a;
+  text-align:center;
+  color:#c3b9db;
+  font-size:13px;
+  line-height:1.8;
+}
+
+.trial strong{color:#e1d7ff}
+
+footer{
+  border-top:1px solid #ffffff12;
+  padding:25px 0 34px;
+  text-align:center;
+  color:#69747b;
+  font:10px 'DM Mono',monospace;
+  letter-spacing:1px;
+}
+
+/* MODAL */
+.modal-bg{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:10;
+  background:#000d;
+  backdrop-filter:blur(15px);
+  padding:18px;
+  align-items:center;
+  justify-content:center;
+  overflow:auto;
+}
+
+.modal{
+  width:min(470px,100%);
+  max-height:95vh;
+  overflow:auto;
+  background:linear-gradient(145deg,#151a1d,#080a0c);
+  border:1px solid #70f0e155;
+  border-radius:22px;
+  padding:25px;
+  box-shadow:0 30px 100px #000;
+}
+
+.modal h2{font-size:23px;margin:0 0 7px}
+
+.muted{
+  color:#89949a;
+  font-size:12px;
+  line-height:1.7;
+}
+
+.label{
+  display:block;
+  margin:18px 0 9px;
+  color:#aab5b8;
+  font:10px 'DM Mono',monospace;
+  letter-spacing:1.5px;
+}
+
+.choices{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+}
+
+.choice{
+  border:1px solid #ffffff20;
+  border-radius:11px;
+  padding:13px;
+  background:#0a0d0f;
+  color:#b9c4c6;
+  cursor:pointer;
+  font:700 12px Manrope;
+}
+
+.choice.active{
+  border-color:var(--cyan);
+  color:var(--cyan);
+  background:#70f0e10c;
+}
+
+.modal input{
+  width:100%;
+  padding:14px;
+  border:1px solid #ffffff24;
+  border-radius:11px;
+  background:#050708;
+  color:white;
+  font:14px Manrope;
+  outline:none;
+}
+
+.modal input:focus{
+  border-color:var(--cyan);
+  box-shadow:0 0 0 3px #70f0e111;
+}
+
+.modal .buy{margin-top:17px}
+
+.status{
+  color:var(--gold);
+  font-size:12px;
+  line-height:1.6;
+  margin-top:12px;
+  min-height:20px;
+}
+
+.pixbox{
+  display:none;
+  margin-top:17px;
+  padding:15px;
+  border:1px solid #ffffff20;
+  border-radius:14px;
+  background:#050708;
+  text-align:center;
+}
+
+#qrcode{
+  display:inline-block;
+  background:white;
+  padding:9px;
+  border-radius:9px;
+  margin:12px;
+}
+
+.pixtext{
+  font:10px 'DM Mono',monospace;
+  word-break:break-all;
+  color:#c5d0d1;
+  background:#101518;
+  padding:12px;
+  border-radius:9px;
+  margin:10px 0;
+}
+
+.copy{
+  border:1px solid #ffffff25;
+  background:#111719;
+  color:#e8f2f0;
+  border-radius:9px;
+  padding:11px 14px;
+  cursor:pointer;
+  font:700 11px Manrope;
+}
+
+.small-note{
+  color:#78838a;
+  font-size:11px;
+  line-height:1.6;
+}
+
+.order{
+  color:#76e6a7;
+  font:10px 'DM Mono',monospace;
+  line-height:1.8;
+  word-break:break-word;
+}
+
+.close{
+  display:block;
+  margin:12px auto 0;
+  padding:8px;
+  border:0;
+  background:transparent;
+  color:#89949a;
+  cursor:pointer;
+}
+
+button:disabled{opacity:.5;cursor:wait}
+
+@media(max-width:760px){
+  .wrap{width:calc(100% - 30px)}
+  header{height:70px}
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:45px 0 25px;
+  }
+  .kicker{justify-content:center}
+  h1{letter-spacing:-3px}
+  .hero-text{margin:auto}
+  .tags{justify-content:center}
+  .visual{height:310px}
+  .globe-wrap{transform:scale(.84)}
+  .plans{grid-template-columns:1fr}
+  .card{padding:24px}
+  .version{font-size:9px;padding:8px}
+  .sound{font-size:9px;padding:8px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    scroll-behavior:auto!important;
+    transition:none!important;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="ambient"></div>
+<div class="ambient right"></div>
+
+<div class="wrap">
+<header>
+  <div class="brand">
+    <div class="brand-icon">✦</div>
+    <span>ZORVANYX</span>
+  </div>
+
+  <div class="header-actions">
+    <span class="version">JAVA 1.21.1</span>
+    <button class="sound" id="soundBtn" type="button">♪ SOM: OFF</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <div class="kicker">A experiência VIP começa aqui</div>
+
+    <h1>
+      VÁ ALÉM.<br>
+      <span>DOMINE O JOGO.</span>
+    </h1>
+
+    <p class="hero-text">
+      Desbloqueie vantagens exclusivas no ZORVANYX.
+      Escolha seu plano, informe seu nick e gere seu pedido PIX
+      com segurança. Nunca solicitamos a senha da sua conta.
+    </p>
+
+    <div class="tags">
+      <span class="tag">✦ JAVA ORIGINAL</span>
+      <span class="tag">◈ TLAUNCHER</span>
+      <span class="tag">30 DIAS DE VIP</span>
+    </div>
+  </div>
+
+  <div class="visual">
+    <div class="stars"></div>
+    <div class="ring"></div>
+    <div class="ring two"></div>
+    <div class="ring three"></div>
+
+    <div class="globe-wrap">
+      <div class="globe">
+        <i class="land one"></i>
+        <i class="land two"></i>
+        <i class="land three"></i>
+      </div>
+      <span class="orb"></span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-title">
+    <div class="overline">ESCOLHA SUA VANTAGEM</div>
+    <h2>Planos VIP</h2>
+    <p>Todos os planos têm duração de 30 dias.</p>
+  </div>
+
+  <div class="plans">
+    <article class="card">
+      <span class="ribbon">✦ PLANO ESSENCIAL</span>
+      <h3>VIP NORMAL</h3>
+      <div class="price">R$ 8,00 <small>/ 30 DIAS</small></div>
+
+      <ul>
+        <li>1 Baú de Pet Raro na ativação</li>
+        <li>/vipkit1 liberado a cada 3 dias</li>
+        <li>Shulker Azul Claro recheada</li>
+        <li>Armadura de Ferro com molde especial</li>
+        <li>Espada, Picareta e Machado de Diamante</li>
+        <li>Maçãs douradas e Totem</li>
+      </ul>
+
+      <button class="buy" onclick="abrirCompra('normal')">
+        ADQUIRIR VIP NORMAL ↗
+      </button>
+    </article>
+
+    <article class="card premium">
+      <span class="ribbon">✧ EXPERIÊNCIA AVANÇADA</span>
+      <h3>VIP PREMIUM</h3>
+      <div class="price">R$ 29,90 <small>/ 30 DIAS</small></div>
+
+      <ul>
+        <li>1 Baú de Pet Raro na ativação</li>
+        <li>/vipkit2 liberado a cada 3 dias</li>
+        <li>Shulker Dourada recheada</li>
+        <li>Armadura Full Diamante com molde especial</li>
+        <li>Espada de Netherite e ferramentas</li>
+        <li>Maçãs douradas e Totem</li>
+      </ul>
+
+      <button class="buy" onclick="abrirCompra('premium')">
+        ADQUIRIR VIP PREMIUM ↗
+      </button>
+    </article>
+  </div>
+
+  <div class="trial">
+    ♛ <strong>TESTE VIP GRÁTIS — 30 DIAS</strong><br>
+    Benefício exclusivo para o nick
+    <strong>pedrinhodograu67</strong>.<br>
+    A emissão é feita pelo painel administrativo e só pode acontecer uma vez.
+  </div>
+</section>
+</main>
+
+<footer>
+  ZORVANYX • LOJA OFICIAL • MINECRAFT JAVA 1.21.1 • PIX
+</footer>
+</div>
+
+<!-- JANELA DE COMPRA -->
+<div class="modal-bg" id="modal" role="dialog" aria-modal="true">
+  <div class="modal">
+    <h2 id="titulo">Comprar VIP</h2>
+
+    <p class="muted">
+      Escolha seu tipo de conta e informe seu nick exatamente
+      como aparece no servidor.
+    </p>
+
+    <span class="label">TIPO DE CONTA</span>
+
+    <div class="choices">
+      <button class="choice active" id="original"
+              onclick="tipoConta('java_original')">
+        ✦ Original
+      </button>
+
+      <button class="choice" id="tlauncher"
+              onclick="tipoConta('tlauncher')">
+        ◈ TLauncher
+      </button>
+    </div>
+
+    <label class="label" for="nick">NICK DO MINECRAFT</label>
+    <input id="nick" maxlength="16" autocomplete="off"
+           spellcheck="false" placeholder="Ex.: pedrinhodograu67">
+
+    <button class="buy" id="criar" onclick="criarPedido()">
+      GERAR PEDIDO E PIX
+    </button>
+
+    <div class="status" id="status" role="status" aria-live="polite"></div>
+
+    <div class="pixbox" id="pixbox">
+      <div class="order" id="pedido"></div>
+      <div id="qrcode"></div>
+      <div class="pixtext" id="pixtexto"></div>
+
+      <button class="copy" onclick="copiarPix()">
+        COPIAR PIX COPIA E COLA
+      </button>
+
+      <p class="small-note">
+        Guarde seu código de resgate.
+        O VIP só será liberado depois da conferência do pagamento
+        e da aprovação no servidor.
+      </p>
+    </div>
+
+    <button class="close" onclick="fechar()">Fechar janela</button>
+  </div>
+</div>
+
 <script>
-let planoAtual='normal',tipoAtual='java_original',pedidoAtual=null,pixAtual='';const $=id=>document.getElementById(id);
-function abrirCompra(plano){planoAtual=plano;tipoAtual='java_original';$('titulo').textContent=plano==='premium'?'VIP PREMIUM • R$ 29,90':'VIP NORMAL • R$ 8,00';$('nick').value='';$('status').textContent='';$('pixbox').style.display='none';$('criar').style.display='block';$('criar').disabled=false;tipoConta('java_original');$('modal').style.display='flex';setTimeout(()=>$('nick').focus(),100)}
-function tipoConta(tipo){tipoAtual=tipo;$('original').classList.toggle('active',tipo==='java_original');$('tlauncher').classList.toggle('active',tipo==='tlauncher')}
-function fechar(){$('modal').style.display='none'}
-async function criarPedido(){const nick=$('nick').value.trim(),btn=$('criar');if(!/^[A-Za-z0-9_]{3,16}$/.test(nick)){$('status').textContent='Digite um nick válido (3 a 16 letras, números ou _).';return}btn.disabled=true;btn.textContent='CRIANDO PEDIDO...';$('status').textContent='';try{const r=await fetch('/api/pedidos',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({nick,plano:planoAtual,tipo_conta:tipoAtual})});const d=await r.json();if(!r.ok)throw Error(d.erro||'Não foi possível criar o pedido.');pedidoAtual=d;pixAtual=d.pix;$('pedido').textContent='PEDIDO '+d.id+' • CÓDIGO DE RESGATE '+d.codigo+' • '+(tipoAtual==='tlauncher'?'TLAUNCHER':'ORIGINAL');$('pixtexto').textContent=pixAtual;$('qrcode').innerHTML='';if(typeof QRCode!=='undefined')new QRCode($('qrcode'),{text:pixAtual,width:180,height:180});else $('qrcode').textContent='QR Code indisponível; use o PIX Copia e Cola.';$('pixbox').style.display='block';$('status').textContent='Pedido criado! Valor: R$ '+Number(d.valor).toFixed(2).replace('.',',');btn.style.display='none'}catch(e){$('status').textContent='Erro: '+e.message}finally{btn.disabled=false;btn.textContent='GERAR PEDIDO E PIX'}}
-async function copiarPix(){if(!pixAtual)return;try{await navigator.clipboard.writeText(pixAtual);$('status').textContent='PIX copiado! Código do pedido: '+pedidoAtual.codigo}catch(e){$('status').textContent='Selecione e copie o texto PIX exibido.'}}
-$('modal').addEventListener('click',e=>{if(e.target===$('modal'))fechar()});document.addEventListener('keydown',e=>{if(e.key==='Escape')fechar()});
-</script></body></html>
+'use strict';
+
+const $ = id => document.getElementById(id);
+
+let planoAtual = 'normal';
+let tipoAtual = 'java_original';
+let pedidoAtual = null;
+let pixAtual = '';
+let somAtivo = false;
+let audioCtx = null;
+
+function tocar(freq = 520, dur = .07) {
+  if (!somAtivo) return;
+
+  try {
+    audioCtx = audioCtx || new (
+      window.AudioContext || window.webkitAudioContext
+    )();
+
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+
+    const o = audioCtx.createOscillator();
+    const g = audioCtx.createGain();
+
+    o.type = 'sine';
+    o.frequency.value = freq;
+
+    g.gain.setValueAtTime(.04, audioCtx.currentTime);
+    g.gain.exponentialRampToValueAtTime(
+      .001,
+      audioCtx.currentTime + dur
+    );
+
+    o.connect(g);
+    g.connect(audioCtx.destination);
+
+    o.start();
+    o.stop(audioCtx.currentTime + dur);
+  } catch (e) {}
+}
+
+$('soundBtn').addEventListener('click', () => {
+  somAtivo = !somAtivo;
+  $('soundBtn').textContent = somAtivo ? '♪ SOM: ON' : '♪ SOM: OFF';
+  tocar(660, .12);
+});
+
+function abrirCompra(plano) {
+  planoAtual = plano;
+  pedidoAtual = null;
+  pixAtual = '';
+
+  $('titulo').textContent =
+    plano === 'premium'
+      ? 'VIP PREMIUM • R$ 29,90'
+      : 'VIP NORMAL • R$ 8,00';
+
+  $('nick').value = '';
+  $('status').textContent = '';
+  $('pixbox').style.display = 'none';
+  $('criar').style.display = 'block';
+  $('criar').disabled = false;
+  $('criar').textContent = 'GERAR PEDIDO E PIX';
+
+  tipoConta('java_original');
+
+  $('modal').style.display = 'flex';
+  tocar(500, .08);
+
+  setTimeout(() => $('nick').focus(), 100);
+}
+
+function tipoConta(tipo) {
+  tipoAtual = tipo;
+
+  $('original').classList.toggle(
+    'active',
+    tipo === 'java_original'
+  );
+
+  $('tlauncher').classList.toggle(
+    'active',
+    tipo === 'tlauncher'
+  );
+
+  tocar(430, .05);
+}
+
+function fechar() {
+  $('modal').style.display = 'none';
+  tocar(330, .06);
+}
+
+async function criarPedido() {
+  const nick = $('nick').value.trim();
+  const btn = $('criar');
+
+  if (!/^[A-Za-z0-9_]{3,16}$/.test(nick)) {
+    $('status').textContent =
+      'Digite um nick válido: 3 a 16 letras, números ou _.';
+    tocar(180, .13);
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'CRIANDO PEDIDO...';
+  $('status').textContent = '';
+
+  try {
+    const resposta = await fetch('/api/pedidos', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        nick: nick,
+        plano: planoAtual,
+        tipo_conta: tipoAtual
+      })
+    });
+
+    let dados;
+
+    try {
+      dados = await resposta.json();
+    } catch (e) {
+      throw new Error(
+        'O servidor retornou uma resposta inválida. Atualize a página.'
+      );
+    }
+
+    if (!resposta.ok) {
+      throw new Error(dados.erro || 'Não foi possível criar o pedido.');
+    }
+
+    pedidoAtual = dados;
+    pixAtual = dados.pix || '';
+
+    $('pedido').textContent =
+      'PEDIDO ' + dados.id +
+      ' • CÓDIGO ' + dados.codigo +
+      ' • ' +
+      (tipoAtual === 'tlauncher' ? 'TLAUNCHER' : 'ORIGINAL');
+
+    $('pixtexto').textContent = pixAtual;
+    $('qrcode').replaceChildren();
+
+    if (typeof QRCode !== 'undefined' && pixAtual) {
+      new QRCode($('qrcode'), {
+        text: pixAtual,
+        width: 180,
+        height: 180,
+        colorDark: '#050505',
+        colorLight: '#ffffff',
+        correctLevel: QRCode.CorrectLevel.M
+      });
+    } else {
+      $('qrcode').textContent =
+        'QR indisponível. Use o PIX Copia e Cola.';
+    }
+
+    $('pixbox').style.display = 'block';
+
+    $('status').textContent =
+      'Pedido criado! Valor: R$ ' +
+      Number(dados.valor).toFixed(2).replace('.', ',');
+
+    btn.style.display = 'none';
+    tocar(740, .16);
+
+  } catch (erro) {
+    $('status').textContent = 'Erro: ' + erro.message;
+    tocar(180, .13);
+
+  } finally {
+    btn.disabled = false;
+
+    if (btn.style.display !== 'none') {
+      btn.textContent = 'GERAR PEDIDO E PIX';
+    }
+  }
+}
+
+async function copiarPix() {
+  if (!pixAtual) return;
+
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(pixAtual);
+    } else {
+      const campo = document.createElement('textarea');
+      campo.value = pixAtual;
+      campo.style.position = 'fixed';
+      campo.style.opacity = '0';
+
+      document.body.appendChild(campo);
+      campo.select();
+      document.execCommand('copy');
+      campo.remove();
+    }
+
+    $('status').textContent =
+      'PIX copiado! Código de resgate: ' +
+      (pedidoAtual ? pedidoAtual.codigo : '');
+
+    tocar(780, .1);
+
+  } catch (e) {
+    $('status').textContent =
+      'Não foi possível copiar automaticamente. Selecione o PIX e copie.';
+  }
+}
+
+$('modal').addEventListener('click', e => {
+  if (e.target === $('modal')) fechar();
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && $('modal').style.display === 'flex') {
+    fechar();
+  }
+
+  if (
+    e.key === 'Enter' &&
+    $('modal').style.display === 'flex' &&
+    $('pixbox').style.display !== 'block'
+  ) {
+    criarPedido();
+  }
+});
+</script>
+</body>
+</html>
